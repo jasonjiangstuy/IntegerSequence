@@ -37,7 +37,8 @@ public class tester {
         while(as.hasNext()){
           System.out.print(as.next()+", ");
         }
-
+        System.out.println();
+        
         r = new Range(10,20);
         as = new ArraySequence(r);
        

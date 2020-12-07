@@ -1,3 +1,4 @@
+import java.io.Console;
 import java.util.NoSuchElementException;
 public class ArraySequence implements IntegerSequence{
   int currentIndex;
@@ -20,10 +21,14 @@ public class ArraySequence implements IntegerSequence{
         data = new int[otherseq.length()];
         currentIndex = 0;
         while(otherseq.hasNext()){
-          data[currentIndex++] = otherseq.next();
+          data[currentIndex] = otherseq.next();
+          currentIndex ++;
         }
+        currentIndex = 0;
+
         otherseq.reset();
      }
+
     public void reset(){ 
         currentIndex = 0; 
  }
