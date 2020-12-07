@@ -23,6 +23,10 @@ public class tester {
                 System.out.print( ", " );
             }
         }
+        // System.out.print(r.next());
+        //error
+        
+
         System.out.println(r.length() == count);
         System.out.println();
     }

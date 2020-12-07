@@ -2,9 +2,15 @@ import java.util.NoSuchElementException;
 public class Range implements IntegerSequence{
   private int start,end,current;
   public Range(int start,  int end){
-        this.start = start;
-        this.end = end;
-        current = 0; 
+        if (start > end){
+            throw new IllegalArgumentException("stop");
+        }
+        // else{
+            this.start = start;
+            this.end = end;
+            current = 0; 
+        // }
+
     }
   public void reset(){ 
       current = 0; 
